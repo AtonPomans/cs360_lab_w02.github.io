@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Photo Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+
+
+    <style>
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link:hover {
+        color: #aaa !important;
+    }
+
+    .nav-link.active {
+        color: salmon !important;
+    }
+
+    </style>
+
+
+    <body class="bg-black">
+
+        <!-- Navbar Fixed Right -->
+        <nav
+            class="navbar navbar-dark bg-black position-fixed top-0 end-0 d-flex flex-column p-4 align-items-end"
+            style="width: 220px"
+        >
+            <a class="navbar-brand mb-5" href="index.html">
+                <strong>SHUTTER</strong>
+            </a>
+
+            <ul class="nav flex-column text-end">
+                <strong>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="photos.html">PHOTOS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="bio.html">BIO</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="blog.html">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">CONTACT</a></li>
+                </strong>
+            </ul>
+
+
+            <!-- Social Media Icons -->
+            <div class="mt-auto pt-5">
+                <a href="https://facebook.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://twitter.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter fs-4"></i>
+                </a>
+                <a href="https://instagram.com" class="text-white" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+            </div>
+
+        </nav>
+
+        <div class="container mt-5 text-white" style="padding-right: 220px">
+            <h1 class="mb-4">Blog</h1>
+
+            <!-- Blog Post 3 -->
+            <div class="mb-5">
+                <h2 class="text-primary">Post 3</h2>
+                <p class="text-muted">Published on February 19, 2025</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida massa nec turpis venenatis, nec varius enim mollis. Ut
+                    fringilla interdum arcu, nec efficitur tortor efficitur a. Fusce lacinia ligula ac felis sollicitudin, et euismod sapien tincidunt.
+                </p>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="mb-5">
+                <h2 class="text-primary">Post 2</h2>
+                <p class="text-muted">Published on January 10, 2025</p>
+                <p>
+                    Vivamus nec nunc eget justo vehicula rhoncus at non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac turpis egestas. Nam non purus ultricies, venenatis felis nec, venenatis neque.
+                </p>
+            </div>
+
+            <!-- Blog Post 1 -->
+            <div class="mb-5">
+                <h2 class="text-primary">Post 1</h2>
+                <p class="text-muted">Published on December 5, 2024</p>
+                <p>
+                    Nulla facilisi. Suspendisse potenti. Praesent consectetur risus sit amet risus ultricies, eget faucibus purus mattis. Mauris
+                    efficitur arcu sit amet urna tempus condimentum.
+                </p>
+            </div>
+        </div>
+
+
+    </body>
+</html>
+

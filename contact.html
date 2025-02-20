@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Photo Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+
+
+    <style>
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link:hover {
+        color: #aaa !important;
+    }
+
+    .nav-link.active {
+        color: salmon !important;
+    }
+
+    </style>
+
+
+    <body class="bg-black">
+
+        <!-- Navbar Fixed Right -->
+        <nav
+            class="navbar navbar-dark bg-black position-fixed top-0 end-0 d-flex flex-column p-4 align-items-end"
+            style="width: 220px"
+        >
+            <a class="navbar-brand mb-5" href="index.html">
+                <strong>SHUTTER</strong>
+            </a>
+
+            <ul class="nav flex-column text-end">
+                <strong>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="photos.html">PHOTOS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="bio.html">BIO</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="contact.html">CONTACT</a></li>
+                </strong>
+            </ul>
+
+
+            <!-- Social Media Icons -->
+            <div class="mt-auto pt-5">
+                <a href="https://facebook.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://twitter.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter fs-4"></i>
+                </a>
+                <a href="https://instagram.com" class="text-white" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+            </div>
+
+        </nav>
+
+
+        <div class="container mt-5 text-white" style="padding-right: 220px">
+            <h1 class="mb-4">Contact Us</h1>
+
+            <form>
+                <!-- Name Input -->
+                <div class="mb-3">
+                    <label for="contactName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email Input -->
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Message Textarea -->
+                <div class="mb-3">
+                    <label for="contactMessage" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-light">Send Message</button>
+            </form>
+        </div>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Photo Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+
+
+    <style>
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link:hover {
+        color: #aaa !important;
+    }
+
+    .nav-link.active {
+        color: salmon !important;
+    }
+
+    </style>
+
+
+    <body class="bg-black">
+
+        <!-- Navbar Fixed Right -->
+        <nav
+            class="navbar navbar-dark bg-black position-fixed top-0 end-0 d-flex flex-column p-4 align-items-end"
+            style="width: 220px"
+        >
+            <a class="navbar-brand mb-5" href="index.html">
+                <strong>SHUTTER</strong>
+            </a>
+
+            <ul class="nav flex-column text-end">
+                <strong>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="photos.html">PHOTOS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="bio.html">BIO</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">CONTACT</a></li>
+                </strong>
+            </ul>
+
+
+    <!-- Social Media Icons -->
+    <div class="mt-auto pt-5">
+        <a href="https://facebook.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook fs-4"></i>
+        </a>
+        <a href="https://twitter.com" class="text-white me-3" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-twitter fs-4"></i>
+        </a>
+        <a href="https://instagram.com" class="text-white" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram fs-4"></i>
+        </a>
+    </div>
+
+        </nav>
+
+        <!-- Gallery Layout -->
+        <div class="container-fluid bg-black" style="padding-right: 220px">
+
+            <!-- Row 1 -->
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <img src="images/img1.png" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#modalImg1"
+                        style="cursor:pointer" />
+                </div>
+                <div class="col-md-6">
+                    <img src="images/img2.png" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#modalImg2"
+                        style="cursor:pointer" />
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row g-2 mt-2">
+                <div class="col-md-4">
+                    <img src="images/img3.png" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#modalImg3"
+                        style="cursor:pointer" />
+                </div>
+                <div class="col-md-5">
+                    <img src="images/img4.png" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#modalImg4"
+                        style="cursor:pointer" />
+                </div>
+                <div class="col-md-3">
+                    <img src="images/img5.png" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#modalImg5"
+                        style="cursor:pointer" />
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row g-2 mt-2">
+                <div class="col-md-6">
+                    <img src="images/img6.png" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#modalImg6"
+                        style="cursor:pointer" />
+                </div>
+                <div class="col-md-6">
+                    <img src="images/img7.png" class="img-fluid"
+                        data-bs-toggle="modal" data-bs-target="#modalImg7"
+                        style="cursor:pointer" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Img 1 -->
+        <div class="modal" id="modalImg1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="images/img1.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Img 2 -->
+        <div class="modal" id="modalImg2">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="images/img2.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Img 3 -->
+        <div class="modal" id="modalImg3">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="images/img3.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Img 4 -->
+        <div class="modal" id="modalImg4">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="images/img4.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Img 5 -->
+        <div class="modal" id="modalImg5">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="images/img5.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Img 6 -->
+        <div class="modal" id="modalImg6">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="images/img6.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Img 7 -->
+        <div class="modal" id="modalImg7">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="images/img7.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
